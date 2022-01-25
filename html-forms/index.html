@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>Coding Form!</h1>
+    <form action="">
+      <!-- email section (text input) -->
+      <div>
+        <label for="email">
+          Email
+          <br />
+          <input id="email" type="text" name="email" size="30" maxlength="100">
+        </label>
+      </div>
+      <!-- why is coding cool section (drop down) -->
+      <div>
+        <label for="why-is-coding-cool">
+          Why is coding cool?
+        </label>
+        <!-- the drop down options are in a div as child of other div. is this okay?
+          or should I have just used a <br />?-->
+        <div>
+          <select id="why-is-coding-cool" name="why-is-coding-cool">
+            <option value="select-an-option">Select an option</option>
+            <option value="because-it-is-interesting">Because it's interesting</option>
+            <option value="because-it-is-fun">Because it's fun</option>
+            <option value="because-it-is-powerful">Because it is powerful</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <!-- favorite language question (radio button) -->
+      <div>
+        Favorite Language (choose one)
+        <br />
+        <br />
+        <label for="HTML">
+          <input id="HTML" type="radio" name="favorite-language" value="HTML">
+          HTML
+        </label>
+        <label for="CSS">
+          <input id="CSS" type="radio" name="favorite-language" value="CSS">
+          CSS
+        </label>
+        <label for="JavaScript">
+          <input id="JavaScript" type="radio" name="favorite-language" value="JavaScript">
+          JavaScript
+        </label>
+      </div>
+      <!-- sign me up section (check box) -->
+      <div>
+        <br />
+        <label for="sign-up">Would you like to sign up for more information?
+          <br />
+          <br />
+          <input id="sign-up" type="checkbox" name="sign-up" checked="checked">
+          Sign me up!
+        </label>
+      </div>
+      <!-- comments section (text area) -->
+      <div>
+        <label for="comments">Comments</label>
+        <br />
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      </div>
+      <!-- submit -->
+      <input type="submit" value="Submit">
+
+    </form>
+  </body>
+</html>
