@@ -1,0 +1,8 @@
+body{
+  font-family: 'Ruda', sans-serif;
+  line-height: 1.5em;
+}
+
+body > h1, h2 {
+  font-family: 'Dongle', sans-serif;
+}
