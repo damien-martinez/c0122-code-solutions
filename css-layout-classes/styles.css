@@ -28,6 +28,10 @@ Set your images to 100% of the width of their containing block
 }
 
 .column-full {
-  justify-self: left;
+  /* justify-content: left; */
   flex-basis: 100%;
+}
+
+img {
+  width: 100%;
 }
