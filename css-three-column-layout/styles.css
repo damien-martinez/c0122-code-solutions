@@ -1,0 +1,82 @@
+* {
+  background-color: #1996da;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2")
+    format("woff2");
+  unicode-range:
+    u+0000-00ff,
+    u+0131,
+    u+0152-0153,
+    u+02bb-02bc,
+    u+02c6,
+    u+02da,
+    u+02dc,
+    u+2000-206f,
+    u+2074,
+    u+20ac,
+    u+2122,
+    u+2191,
+    u+2193,
+    u+2212,
+    u+2215,
+    u+feff,
+    u+fffd;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 26px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 95%;
+}
+
+p {
+  color: #97c3dc;
+  text-align: center;
+  font-size: 75%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  margin: auto;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+/* moved the content to the center and made the div smaller */
+.image-div {
+  justify-content: center;
+  display: flex;
+}
+
+/* makes it a circle and makes it bigger */
+.image-item {
+  border-radius: 100px;
+  padding: 20px;
+  background-color: white;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+}
