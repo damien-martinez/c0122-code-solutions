@@ -1,7 +1,8 @@
 * {
   font-family: Karla, sans-serif;
-  font-style: normal;
-  src: url("https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtyU5rZP.woff2") format("woff2");
+
+  /* font-style: normal;
+  src: url("https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtyU5rZP.woff2") format("woff2"); */
 }
 
 .container {
