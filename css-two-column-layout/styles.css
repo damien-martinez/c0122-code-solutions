@@ -1,8 +1,5 @@
 * {
   font-family: Karla, sans-serif;
-
-  /* font-style: normal;
-  src: url("https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtyU5rZP.woff2") format("woff2"); */
 }
 
 .container {
@@ -25,15 +22,11 @@
 .content-section-div {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
-.content-section-one-fourth {
+.content-section-one-half {
   flex-basis: calc(100% / 2);
   display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .column-one-third {
@@ -49,8 +42,6 @@
   display: flex;
   height: 100px;
   width: 100px;
-
-  /* height: 50%; */
 }
 
 .anchor-div {
