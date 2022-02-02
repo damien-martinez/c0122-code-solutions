@@ -38,8 +38,12 @@
   margin-top: 20px;
 }
 
-.image-item {
-  display: flex;
+/* .image-item {
+  height: 25px;
+  width: 25px;
+} */
+
+img {
   height: 100px;
   width: 100px;
 }
