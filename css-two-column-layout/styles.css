@@ -24,24 +24,26 @@
   flex-wrap: wrap;
 }
 
-.content-section-one-half {
+.column-half {
   flex-basis: calc(100% / 2);
-  display: flex;
 }
 
-/* .column-one-third {
+.column-one-third {
   flex-basis: calc(100% / 3);
-} */
+}
 
 .column-two-third {
   flex-basis: calc(200% / 3);
   margin-top: 20px;
 }
 
-/* .image-item {
-  height: 25px;
-  width: 25px;
-} */
+.row-wrap {
+  flex-wrap: wrap;
+}
+
+.text-align-right {
+  text-align: end;
+}
 
 img {
   height: 100px;
