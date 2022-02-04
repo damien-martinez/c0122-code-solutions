@@ -12,75 +12,72 @@
 <body>
   <div class="container">
     <!-- first row (top of webage) -->
-    <div class="row">
-      <!-- logo part of the top -->
-      <div class="logo-div">
-        <h1 class="logo">CANVAS</h1>
-      </div>
+    <div class="row top-margin justify-content-space-between">
+      <!-- image logo part of the top -->
+      <img class="logo-blue" src="images/logo-blue.svg" alt="">
       <!-- nav bar at top -->
       <div class="nav-bar-div">
-        <a href="">Product</a>
-        <a href="">Implementation</a>
-        <a href="">About Us</a>
-        <a href="">Blog</a>
-        <a href="">Contact Us</a>
+        <a class="nav-anchor no-underline" href="">Product</a>
+        <a class="nav-anchor no-underline" href="">Implementation</a>
+        <a class="nav-anchor no-underline" href="">About Us</a>
+        <a class="nav-anchor no-underline" href="">Blog</a>
+        <a class="nav-anchor contact-us-button no-underline" href="">Contact Us</a>
       </div>
     </div>
     <!-- row with the picture  -->
-    <div class="row">
-      <div class="text-content-div">
+    <div class="row img-div">
+      <!-- where the image will go -->
+      <div class="transparency-div">
+      </div>
+      <div class="text-content-div half-column">
         <h1 class="h1-content-div">The EMR Reimagined for Primary Care</h1>
         <p class="p-content-div">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eveniet nam,
           voluptas voluptates minus similique tempora, corrupti velit, odit animi
           placeat mollitia ullam. Repudiandae delectus minima rerum, quo nesciunt
-          velit excepturi recusandae vero tempora explicabo.
+          velit excepturi recusandae vero tempora explicabo.Ut eveniet nam,
+          voluptas voluptates minus similique tempora, corrupti velit, odit animi
+          placeat mollitia ullam. Repudiandae delectus minima rerum, quo nesciunt
+          velit excepturi recusandae vero tempora explicabo.Ut eveniet nam,
+          voluptas voluptates minus similique tempora, corrupti velit, odit animi
+          placeat mollitia ullam.
         </p>
         <a href="" class="a-content-div">Get Started</a>
-      </div>
-      <div class="transparency-div">
-        <!-- this is where the transparency will go -->
-      </div>
-      <!-- where the image will go -->
-      <div class="img-div">
-        <img src="" alt="">
       </div>
     </div>
     <!-- new row for the 'clinicians prefer canvas' section -->
     <div class="row">
       <!-- header part of this row -->
-      <div class="pref-div">
-        <div class="pref-div-header">
-          <h3 class="h3-pref-div">Clinicians Prefer Canvas</h3>
-          <p class="p-pref-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            numquam voluptate ipsa quos tenetur culpa!</p>
-        </div>
-        <!-- locations section left column -->
-        <div class="location-div-one-half">
-          <p class="p-location-div">Cascade Family Practice, Portland OR</p>
-          <p class="p-location-div">Cascade Family Practice, Portland OR</p>
-          <p class="p-location-div">Cascade Family Practice, Portland OR</p>
-        </div>
-        <!-- locations section right column -->
-        <div class="location-div-one-half">
-          <p class="p-location-div">Cascade Family Practice, Portland OR</p>
-          <p class="p-location-div">Cascade Family Practice, Portland OR</p>
-          <p class="p-location-div">Cascade Family Practice, Portland OR</p>
-        </div>
+      <div class="pref-div half-column">
+        <h3 class="h3-pref-div">Clinicians Prefer Canvas</h3>
+        <p class="p-pref-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          numquam voluptate ipsa quos tenetur culpa!</p>
+      </div>
+      <!-- locations section left column -->
+      <div class="location-div half-column">
+        <p class="p-location-div">Cascade Family Practice, Portland OR</p>
+        <p class="p-location-div">Cascade Family Practice, Portland OR</p>
+        <p class="p-location-div">Cascade Family Practice, Portland OR</p>
+      </div>
+      <!-- locations section right column -->
+      <div class="location-div half-column">
+        <p class="p-location-div">Cascade Family Practice, Portland OR</p>
+        <p class="p-location-div">Cascade Family Practice, Portland OR</p>
+        <p class="p-location-div">Cascade Family Practice, Portland OR</p>
       </div>
     </div>
     <!-- new row 'ready to learn more' section -->
     <div class="row">
-      <div class="learn-more-div">
+      <div class="learn-more one-fourth">
         <h4 class="h4-learn-more-div">Ready to learn more?</h4>
         <p class="p-learn-more-div">Schedule a private meeting now</p>
       </div>
-      <div class="get-started-div">
+      <div class="get-started one-fourth">
         <a class="get-started-anchor" href="">Get Started</a>
       </div>
     </div>
     <div class="row">
-      <div class="column-one-fourth">
+      <div class="canvas-column half-column">
         <h3 class="canvas-h3">CANVAS</h3>
         <p class="canvas-p">2307 Irving Street, Suite 228</p>
         <p class="canvas-p">San Francisco CA 94122</p>
@@ -88,11 +85,21 @@
         <p class="canvas-p">info@canvasmedical.com</p>
       </div>
       <div class="column-one-fourth">
-
+        <p class="company-product">COMPANY</p>
+        <a class="company-product-anchor" href="">About Us</a>
+        <a class="company-product-anchor" href="">Blog</a>
       </div>
       <div class="column-one-fourth">
-
+        <p class="company-product">PRODUCT</p>
+        <a class="company-product-anchor" href="">Product</a>
+        <a class="company-product-anchor" href="">Implementation</a>
+        <a class="company-product-anchor" href="">For Health Plans</a>
+        <a class="company-product-anchor" href="">Security</a>
       </div>
+    </div>
+    <div class="row">
+      <p>Privacy & Terms</p>
+      <p>Contact Us</p>
     </div>
   </div>
 
