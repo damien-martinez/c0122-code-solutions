@@ -55,10 +55,15 @@ h1 {
   font-size: 11px;
 }
 
-.height-245 {
-  height: 245px;
+.height-230 {
+  height: 230px;
 }
 
 .object-fit-contain {
   object-fit: cover;
+}
+
+.left-right-margin {
+  margin-left: 5px;
+  margin-right: 5px;
 }
