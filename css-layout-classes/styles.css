@@ -1,0 +1,37 @@
+/* Use display: flex on your row class so that its children flow
+horizontally across the page instead of vertically down the page.
+
+Use percentage widths on your column- classes.
+Set your images to 100% of the width of their containing block
+(the column they're in). */
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+.column-one-fourth {
+  flex-basis: calc(100% / 4);
+}
+
+.column-two-third {
+  flex-basis: 66%;
+}
+
+.column-full {
+  /* justify-content: left; */
+  flex-basis: 100%;
+}
+
+img {
+  width: 100%;
+}
