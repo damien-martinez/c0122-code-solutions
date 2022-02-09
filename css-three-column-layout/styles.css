@@ -1,0 +1,61 @@
+* {
+  background-color: #1996da;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 26px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 95%;
+}
+
+p {
+  color: #97c3dc;
+  text-align: center;
+  font-size: 75%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  margin: auto;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+/* moved the content to the center and made the div smaller */
+.image-div {
+  justify-content: center;
+  display: flex;
+}
+
+/* makes it a circle and makes it bigger */
+.image-item {
+  border-radius: 100px;
+  padding: 20px;
+  background-color: white;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+}
