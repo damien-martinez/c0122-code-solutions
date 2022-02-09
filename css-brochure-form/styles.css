@@ -1,0 +1,60 @@
+form {
+  width: 50%;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+  color: #ee6c66;
+  text-transform: uppercase;
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+label {
+  padding-left: 0.5em;
+  text-transform: uppercase;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 65%;
+}
+
+div {
+  padding-bottom: 0.5em;
+}
+
+.user-input {
+  width: 100%;
+  padding: 0.5em;
+  font-family: AtlasGrotesk, sans-serif;
+  font-weight: 300;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.submit-div {
+  /* display: inline-block; */
+  text-align: right;
+  width: 100%;
+}
+
+.submit-button {
+  font-size: 12px;
+  padding: 10px 20px;
+  background-color: #ec5d57;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-family: AtlasGrotesk, sans-serif;
+  font-weight: bolder;
+}
+
+.engineer-input {
+  width: 100%;
+  padding: 0.5em;
+  font-family: AtlasGrotesk, sans-serif;
+  font-weight: 300;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: rgb(220 220 220 / 25.3%);
+  font-size: 75%;
+}
