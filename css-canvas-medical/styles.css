@@ -1,0 +1,237 @@
+* {
+  font-family: avenir, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  margin: auto;
+}
+
+.half-column {
+  flex-basis: calc(100% / 2);
+}
+
+.full-column {
+  flex-basis: calc(100%);
+}
+
+.column-one-fourth {
+  flex-basis: calc(100% / 4);
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+.align-right {
+  width: 100%;
+  justify-items: right;
+}
+
+.logo-blue {
+  width: 100px;
+  height: 30px;
+}
+
+.header-margin {
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.nav-anchor {
+  color: #838080;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 10px;
+}
+
+.contact-us-button {
+  border: solid #294364;
+  background-color: #294364;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.text-content-div {
+  margin: 40px;
+  z-index: 2;
+}
+
+.img-div {
+  width: 750px;
+  height: 400px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.h1-content-div {
+  font-size: 28px;
+  color: white;
+}
+
+.p-content-div {
+  font-size: 12px;
+  color: white;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.transparency-div {
+  background-color: rgb(75 75 75 / 49.3%);
+  position: absolute;
+  z-index: 1;
+  width: 750px;
+  height: 400px;
+}
+
+.a-content-div {
+  border: solid #294364;
+  background-color: #294364;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.p-pref-div {
+  margin-left: 175px;
+  margin-right: 175px;
+  color: #8a8a8a;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.location-div {
+  text-align: center;
+  color: #8a8a8a;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.h3-pref-div {
+  color: #666;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.background-color {
+  background-color: #fafafa;
+}
+
+.top-bottom-margin {
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
+.get-started {
+  margin-top: 5px;
+}
+
+.h4-learn-more-div {
+  color: #666;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.p-learn-more-div {
+  color: #8a8a8a;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.learn-more {
+  margin-top: -30px;
+}
+
+.dark-grey-background {
+  background-color: #525351;
+}
+
+.logo-white {
+  width: 90px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.padding-grey {
+  padding: 70px 50px;
+}
+
+.canvas-p {
+  color: white;
+  font-size: 10px;
+  line-height: 8px;
+}
+
+.white-font {
+  color: white;
+}
+
+.company-product {
+  line-height: 30px;
+}
+
+.company-product-anchor {
+  color: white;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.display-block {
+  display: block;
+}
+
+.learn-more-margin {
+  margin: 30px 60px;
+}
+
+.bottom-div {
+  padding: 20px;
+}
+
+.bottom-p {
+  color: #787878;
+  margin: 20px;
+  font-size: 12px;
+}
+
+.left-right-margin {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 40px;
+}
+
+.font-headers {
+  font-family: "Tiempos Headline", serif;
+}
+
+.hr-class {
+  border: none;
+  border-top: 1px solid #78787825;
+  text-align: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
