@@ -48,6 +48,7 @@ p {
   flex-wrap: wrap;
 }
 
+/* left off working on .position */
 .position {
   text-align: center;
   position: fixed;
