@@ -1,0 +1,55 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.open-button {
+  background-color: rgb(81 81 214);
+  color: white;
+  padding: 10px 50px;
+  border-radius: 7px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgb(122 122 122);
+}
+
+.pop-up {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  width: 100%;
+}
+
+.no-button {
+  background-color: rgb(206 81 81);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgb(122 122 122);
+  text-align: center;
+  width: 100%;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.position {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
