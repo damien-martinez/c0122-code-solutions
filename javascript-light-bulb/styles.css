@@ -1,0 +1,31 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.circle {
+  border-radius: 100px;
+  background-color: yellow;
+  padding: 100px;
+  margin: auto;
+  box-shadow: 0 0 10px 10px rgb(255 255 0 / 28.1%);
+}
+
+.dark-grey {
+  background-color: rgb(53 53 53);
+  box-shadow: 0 0 10px 10px rgb(53 53 53 / 28.1%);
+}
+
+.black {
+  background-color: black;
+}
+
+.height-width {
+  height: 100%;
+  width: 100%;
+}
