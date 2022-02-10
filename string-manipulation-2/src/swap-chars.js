@@ -5,6 +5,12 @@
 // create a variable and assign it to the string at first index
 // create a variable and assign it to the string at second index
 // create a newstring empty variable
+// run a for loop that interates through the string
+// checks if the index is at the index of first index
+// if it is, concatenate the new string with the character at the second index and re-assign it
+// if it isnt, check if the current index is at the secondIndex.
+// if it is, concatenate the second index with the new string and re-assign
+// if neither condition checks, concatenate the character at the current index with new string
 
 function swapChars(firstIndex, secondIndex, string) {
   var firstIndexChar = string[firstIndex];
