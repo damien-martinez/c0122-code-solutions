@@ -1,18 +1,27 @@
 /* exported chunk */
+
 function chunk(array, size) {
   var newArray = [];
   var subArray = [];
-  var sizeCount = 1;
-  for (var i = 0; i < array.length; i++) {
-    if (sizeCount !== size) {
-      subArray.push(array[i]);
+  var sizeCount = 0;
+  if (array.length < 1) {
+    return [];
+  } else {
+    for (var i = 0; i < array.length; i++) {
+      if (sizeCount < size) {
+        subArray.push(array[i]);
+        sizeCount++;
 
-    } else {
-      newArray.push(subArray);
-      sizeCount = 1;
+      } else if (sizeCount === size) {
+        newArray.push(subArray);
+        sizeCount = 0;
+        subArray = [];
+        subArray.push(array[i]);
+        sizeCount++;
+      }
+
     }
-    sizeCount++;
   }
-
+  newArray.push(subArray);
   return newArray;
 }
