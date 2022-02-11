@@ -41,9 +41,8 @@ p {
   flex-wrap: wrap;
 }
 
-.position {
+/* .position {
   position: fixed;
   width: 100%;
   top: 35%;
-  text-align: center;
-}
+  text-align: center; */
