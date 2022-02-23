@@ -1,0 +1,43 @@
+.hidden {
+  display: none !important;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.image-div {
+  padding: 2rem 0;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.chevron {
+  font-size: 4rem;
+}
+
+.justify-vert-center {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chev-left-div {
+  margin-right: 15rem;
+}
+
+.chev-right-div {
+  margin-left: 15rem;
+}
+
+.circle {
+  font-size: 2rem;
+  margin: 3rem 0.5rem;
+}
