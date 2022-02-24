@@ -67,3 +67,28 @@ function clickRight(event) {
 var $rightChev = document.querySelector('.chev-right-div');
 
 $rightChev.addEventListener('click', clickRight);
+
+var $circleDiv = document.querySelector('.circle-div');
+
+function clickCircle(event) {
+  clearInterval(intervalID);
+
+  for (var j = 0; j < $circleNodes.length; j++) {
+    if (event.target === $circleNodes[j]) {
+      for (var i = 0; i < $imgNodes.length; i++) {
+        $imgNodes[i].setAttribute('class', 'hidden');
+        $circleNodes[i].setAttribute('class', 'circle far fa-circle');
+
+      }
+
+      counter = j;
+      $circleNodes[counter].setAttribute('class', 'circle fas fa-circle');
+      $imgNodes[counter].setAttribute('class', '');
+      intervalID = setInterval(changeCarousel, 3000);
+
+    }
+  }
+
+}
+
+$circleDiv.addEventListener('click', clickCircle);

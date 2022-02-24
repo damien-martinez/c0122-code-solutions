@@ -20,6 +20,11 @@
   justify-content: center;
 }
 
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .chevron {
   font-size: 4rem;
 }
@@ -27,14 +32,6 @@
 .justify-vert-center {
   flex-direction: column;
   justify-content: center;
-}
-
-.chev-left-div {
-  margin-right: 15rem;
-}
-
-.chev-right-div {
-  margin-left: 15rem;
 }
 
 .circle {
