@@ -11,11 +11,15 @@ function titleCase(title) {
   var firstWord = true;
 
   for (var i = 0; i < title.length; i++) {
-    if (title[i] !== ' ' && title[i] !== '-') {
+    if (title[i] !== ' ') {
       subString += title[i];
     }
+    if (title[i] === '-') {
+      subString = subString.slice(0, 1).toUpperCase() + subString.slice(1);
+      newTitle += subString;
+      subString = '';
 
-    if (title[i] === ' ' || title[i] === '-') {
+    } else if (title[i] === ' ') {
       if (title[i - subString.length - 2] === ':') {
         subString = subString.slice(0, 1).toUpperCase() + subString.slice(1) + ' ';
         newTitle += subString;
@@ -48,6 +52,13 @@ function titleCase(title) {
             subString = '';
             break;
           }
+        }
+        if (title[i - 1] === ':' && subString.slice(0, subString.length - 1) === 'javascript') {
+
+          newTitle = newTitle + 'JavaScript' + title[i - 1] + ' ';
+
+          subString = '';
+          isMinorWord = true;
         }
 
         if (subString === 'api' || subString === 'javascript') {
