@@ -1,4 +1,4 @@
-// /* exported equal */
+/* exported equal */
 
 // a function that takes in two array and checks if they are exactly the Same . if they are return true if they are not return false
 
