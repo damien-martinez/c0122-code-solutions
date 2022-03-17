@@ -7,8 +7,6 @@ for (let i = 2; i < process.argv.length; i++) {
 }
 
 fs.writeFile('note.txt', data, 'utf8', err => {
-  if (err) {
-    console.error(err);
-  }
+  if (err) throw err;
 
 });
