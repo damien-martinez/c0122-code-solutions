@@ -1,0 +1,419 @@
+    1  exit
+    2  whoami
+    3  git congig --global user.name "damien-martinez"
+    4  git config --global user.name "damien-martinez"
+    5  git config --global user.email "mart.damien1@gmail.com"
+    6  git config --global --list
+    7  exit
+    8  cd repos
+    9  cd ajax-project/
+   10  git switch user-can-retrieve-data
+   11  git status
+   12  git add -A
+   13  git commit "Completed feature 1"
+   14  git commit -m "Completed feature 1"
+   15  git status
+   16  git add -A
+   17  git commit -m "Completed feature 1 and made changes based on feedback."
+   18  git push origin user-can-retrieve-data
+   19  git status
+   20  git add -A
+   21  git commit -m "Completed feature 1 and made changes based on new feedback."
+   22  git push origin user-can-retrieve-data
+   23  git status
+   24  git add -A
+   25  git commit -m "Completed feature 1 and removed some code."
+   26  git add -A
+   27  git commit -m "Completed feature 1 and fixed more errors."
+   28  git push origin user-can-retrieve-data
+   29  git switch master
+   30  git push origin master
+   31  git pull origin master
+   32  git status
+   33  git branch --list
+   34  git branch user-can-answer-question-and-get-results
+   35  git switch user-can-answer-question-and-get-results
+   36  git status
+   37  git add -A
+   38  git status
+   39  git commit -m "Created DOM of questions and answers."
+   40  git status
+   41  git add -A
+   42  git commit -m "Created DOM of questions and answers."
+   43  git push origin user-can-answer-question-and-get-results
+   44  git status
+   45  git add -A
+   46  git status
+   47  git commit -m "added a border when a multiple choice gets clicked."
+   48  git push origin user-can-answer-question-and-get-results
+   49  git status
+   50  http https://opentdb.com/api.php?amount=10&category=20&difficulty=hard
+   51  http https://opentdb.com/api.php?amount=25&category=14&difficulty=medium
+   52  http https://opentdb.com/api.php?amount=25&category=13&difficulty=hard
+   53  http https://opentdb.com/api.php?amount=25&category=13&difficulty=hard&type=multiple
+   54  http https://opentdb.com/api.php?amount=10&category=13&difficulty=hard&type=multiple
+   55  git status
+   56  git add -A
+   57  git status
+   58  git commit -m "Completed feature 2 and checked for bugs."
+   59  git status
+   60  git add -A
+   61  git commit -m "Completed feature 2 and checked for bugs."
+   62  git push origin user-can-answer-question-and-get-results
+   63  git status
+   64  git add -A
+   65  got commit -m "made changes based on feedback.
+   66  git status
+   67  git commit -m "made changes based on feedback.
+   68  git commit -m "made changes based on feedback."
+   69  git push origin user-can-answer-question-and-get-results
+   70  git status
+   71  git add -A
+   72  git commit -m "fixed a bug and moved assignAnswer function to global scope."
+   73  git status
+   74  git add -A
+   75  git commit -m "Fixed the submit listener so that it only listens to button click."
+   76  git status
+   77  git add -A
+   78  git status
+   79  git commit -m "removed data from dataModel that was no longer needed."
+   80  git push origin user-can-answer-question-and-get-results
+   81  git statis
+   82  git status
+   83  git add -A
+   84  git commit -m "Added values to the data model."
+   85  git push origin user-can-answer-and-get-results
+   86  git status
+   87  git push origin user-can-answer-question-and-get-results
+   88  git status
+   89  git switch master
+   90  git status
+   91  git pull origin master
+   92  git branch user-can-answer-each-question-in-succession
+   93  git switch user-can-answer-each-question-in-succession
+   94  git status
+   95  git add -A
+   96  git commit -m "finished feature 3 and checked for bugs."
+   97  git push origin user-can-answer-each-question-in-succession
+   98  git status
+   99  git switch master
+  100  git status
+  101  git pull origin master
+  102  git branch user-can-have-scores-saved
+  103  git switch user-can-have-scores-saved
+  104  git status
+  105  git add -A
+  106  git commit -m "Created a local storage."
+  107  git push origin user-can-have-scores-saved
+  108  git status
+  109  git add -A
+  110  git commit -m "Completed feature 4 and checked for bugs."
+  111  git status
+  112  git push origin user-can-have-scores-saved
+  113  git status
+  114  git add -A
+  115  git commit -m "Fixed HTML special HTML entities."
+  116  git push origin user-can-have-scores-saved
+  117  git status
+  118  git add -A
+  119  git commit -m "Added images to images directory."
+  120  git push origin user-can-have-scores-saved
+  121  git status
+  122  git add -A
+  123  git commit -m "removed String functions."
+  124  git push origin user-can-have-scores-saved
+  125  git status
+  126  git switch master
+  127  git status
+  128  git pull orgin master
+  129  git pull origin master
+  130  git status
+  131  git add -A
+  132  git commit -m "Finished making container to show final score. Working on replaying game.
+  133  git statis
+  134  git status
+  135  git commit -m "Finished making container to show final score. Working on re-playing game."
+  136  git add -A
+  137  git commit -m "Finished making container to show final score. Working on re-playing game."
+  138  git branch user-can-see-overall-score
+  139  git switch user-can-see-overall-score
+  140  git status
+  141  git add -A
+  142  git commit -m "Completed feature 5 and checked for bugs."
+  143  git status
+  144  git push origin user-can-see-overall-score
+  145  git add -A
+  146  git commit -m "Cleaned out commented code."
+  147  git push origin user-can-see-overall-score
+  148  git status
+  149  git switch master
+  150  git pull origin master
+  151  git status
+  152  git switch add-fonts
+  153  git branch add-fonts
+  154  git switch add-fonts
+  155  git add -A
+  156  git commit -m "Changed fonts"
+  157  git status
+  158  git add -A
+  159  git commit -m "Changed fonts"
+  160  git push origin add-fonts
+  161  git switch master
+  162  git pull orgin master
+  163  git pull origin master
+  164  git status
+  165  git branch code-cleanup
+  166  git switch code-cleanup
+  167  git status
+  168  git commit -m "Working on code clean up. Looking to switch click listeners to submit features."
+  169  git add -A
+  170  git commit -m "Working on code clean up. Looking to switch click listeners to submit features."
+  171  git push origin code-cleanup
+  172  git status
+  173  git add -A
+  174  git commit -m "went through code cleanup link."
+  175  git push origin code-cleanup
+  176  git status
+  177  git add -A
+  178  git commit -m "Went through the steps from the project interfaces resource."
+  179  git status
+  180  git push origin code-cleanup
+  181  git status
+  182  git remote set-url origin git@github.com:damien-martinez/trivia-game.git
+  183  cd ~/repos
+  184  mv ajax-project trivia-game
+  185  cd trivia-game/
+  186  git status
+  187  git add -A
+  188  git commit -m "Completed all of code clean up"
+  189  git push origin code-cleanup
+  190  git status
+  191  git switch master
+  192  git pull origin master
+  193  git status
+  194  ..cd
+  195  ~/cd
+  196  ..cd
+  197  ~/cd
+  198  ~cd
+  199  cd~
+  200  cd..
+  201  cd~
+  202  cd ~
+  203  ls
+  204  pwd
+  205  cd repos
+  206  cd c0122
+  207  ls
+  208  cd c0122-code-solutions/
+  209  git switch string-manipulation-3
+  210  git status
+  211  git add -A
+  212  git commit -m "Working on titleCase problem"
+  213  git push origin string-manipulation-3
+  214  git status
+  215  git add -A
+  216  git commit -m "Completed string-manipulaiton-3"
+  217  git status
+  218  git add -A
+  219  git commit -m "Completed titleCase"
+  220  git add -A
+  221  git commit -m "Completed titleCase"
+  222  git status
+  223  git push origin string-manipulation-3
+  224  git status
+  225  dev-env
+  226  whoami
+  227  git status
+  228  git add -A
+  229  git commit -m "Completed string-manipulation-3"
+  230  git status
+  231  git push origin string-manipulation-3
+  232  git switch master
+  233  git switch object-manipulation-2
+  234  git status
+  235  git commit -A
+  236  git add -A
+  237  git status
+  238  git commit -m "Completed object-manipulation-2"
+  239  git status
+  240  git push origin object-manipulation-2
+  241  git status
+  242  git switch master
+  243  git pull origin master
+  244  git status
+  245  git branch array-manipulation-3
+  246  git status
+  247  git switch array-manipulation-3
+  248  git switch
+  249  git status
+  250  git add -A
+  251  git commit -m "Working on array-manipulation-3"
+  252  git status
+  253  git commit -m "Working on array-manipulation-3" --no -verify
+  254  git status
+  255  git push origin array-manipulation-3
+  256  git status
+  257  git commit -m "Working on array-manipulation-3" --no -verify
+  258  git commit -m "Working on array-manipulation-3" --no-verify
+  259  git push origin array-manipulation-3
+  260  git status
+  261  git add -A
+  262  git commit -m "Completed array-manipulation-3"
+  263  git push origin array-manipulation-3
+  264  git status
+  265  git switch master
+  266  git branch object-manipulation-3
+  267  git switch onject-manipulation-3
+  268  git switch object-manipulation-3
+  269  git status
+  270  git add -A
+  271  git commit -m "Completed object-manipulation-3"
+  272  git status
+  273  git push origin object-manipulaiton-3
+  274  git push origin object-manipulation-3
+  275  git status
+  276  git switch master
+  277  git switch object-manipulation-2
+  278  git status
+  279  git add -A
+  280  git commit -M "Removed some conditionals that would never trigger."
+  281  git commit -m  "Removed some conditionals that would never trigger."
+  282  git push origin object-manipulaiton-2
+  283  git push origin object-manipulation-2
+  284  git switch master
+  285  git pull origin master
+  286  git status
+  287  git branch add-timer
+  288  cd ~
+  289  pwd
+  290  cd repos/
+  291  cd trivia-game/
+  292  git branch add-timer
+  293  git switch add-timer
+  294  git status
+  295  git statis
+  296  git status
+  297  git add -A
+  298  git commit -m "fixed bug to stop from multiple submits and removed console log"
+  299  git push origin add-timer
+  300  git status
+  301  cd ~
+  302  cd repos/
+  303  ls
+  304  cd c0122-code-solutions/
+  305  git statis
+  306  git status
+  307  git pull origin master
+  308  git branch es6-const-let
+  309  git branch --list
+  310  git switch es6-const-let
+  311  git status
+  312  git add -A
+  313  git push origin es6-const-let
+  314  git commit -m "Completed es6-const-let
+
+q
+  315  git commit -m "Completed es6-const-let."
+  316  git add -A
+  317  git commit -m "Completed es6-const-let."
+  318  git status
+  319  git push origin es6-const-let
+  320  git switch master
+  321  git branch es6-template-literals
+  322  git switch es6-template-literals
+  323  git status
+  324  git add -A
+  325  git commit -m "Completed es6-template-literals"
+  326  git push origin es6-template-literals
+  327  git status
+  328  git switch master
+  329  git branch es6-destructuring
+  330  git switch es6-destructuring
+  331  git status
+  332  git add -A
+  333  git commit -m "Completed es6-destructuring" 
+  334  git push origin es6-destructuring 
+  335  git status
+  336  git switch master
+  337  git branch es6-arrow-functions
+  338  git switch es6-arrow-functions
+  339  git switch master
+  340  git branch command-line-basics
+  341  git switch command-line-basics
+  342  whoami
+  343  pwd
+  344  cd command-line-basics
+  345  cd command-line-bascis
+  346  cd command-line-basics
+  347  cd ~
+  348  cd repos/
+  349  cd c0122-code-solutions/
+  350  pwd
+  351  cd command-line-basics/
+  352  pwd
+  353  man man
+  354  man cat
+  355  cat laziness.txt
+  356  cat impatience.txt 
+  357  cat hubris.txt 
+  358  man man
+  359  man cat
+  360  cat laziness.txt impatience.txt hubris.txt 
+  361  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  362  cat three-virtues.txt 
+  363  man ls
+  364  ls lfz-staff/
+  365  ls -a lfz-staff/
+  366  man ls
+  367  ls -F lfz-staff/
+  368  ls -aF lfz-staff/ > lfz-staff/content.txt
+  369  ls lfz-staff/content.txt 
+  370  ls -a lfz-staff/content.txt 
+  371  cat lfz-staff/content.txt 
+  372  man pwd
+  373  pwd
+  374  pwd > i-was-here.txt
+  375  ls
+  376  cat i-was-here.txt 
+  377  man echo
+  378  echo 'Hello World!'
+  379  echo 'Hello, World!' > hello.txt
+  380  ls
+  381  cat hello.txt 
+  382  man touch
+  383  touch tag-youre-it.txt
+  384  touch snoot/boop.txt
+  385  ls snoot/
+  386  man mkdir
+  387  mkdir parent
+  388  ls
+  389  mkdir -p parent/child/grandchild
+  390  touch parent/child/grandchild/ .gitkeep
+  391  parent/child/grandchild/ touch .gitkeep 
+  392  cd parent/child/grandchild/
+  393  touch .gitkeep
+  394  ls -a
+  395  cd ~
+  396  cd repos/c0122-code-solutions/command-line-basics/
+  397  man mv
+  398  mv pokiemans/ > pokemon
+  399  mv pokiemans/ pokemon
+  400  ls
+  401  man rm
+  402  rm lol.txt
+  403  rm -r kill-me/
+  404  man cp
+  405  cp and-then.txt no-and-then.txt
+  406  ls
+  407  cat and-then.txt no-and-then.txt 
+  408  man history 
+  409  histroy
+  410  history
+  411  touch history > command-history.txt
+  412  cat history > command-histroy.txt
+  413  history
+  414  echo history
+  415  history > command-histroy.txt
+  416  rm command-histroy.txt 
+  417  history > command-history.txt
