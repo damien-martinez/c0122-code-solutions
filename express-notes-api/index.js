@@ -6,19 +6,14 @@ const fs = require('fs');
 
 const data = require('./data.json');
 
-let dataModel = {
-};
-
-dataModel = data;
-
 const jsonMiddleware = express.json();
 
 app.use(jsonMiddleware);
 
 app.get('/api/notes', (req, res) => {
   const notesArray = [];
-  for (const id in dataModel.notes) {
-    notesArray.push(dataModel.notes[id]);
+  for (const id in data.notes) {
+    notesArray.push(data.notes[id]);
   }
 
   res.status(200).json(notesArray);
@@ -30,9 +25,9 @@ app.get('/api/notes/:id', (req, res) => {
     res.status(400).json({
       error: 'id must be a positive integer'
     });
-  } else if (dataModel.notes[id]) {
-    res.status(200).json(dataModel.notes[id]);
-  } else if (!dataModel.notes[id]) {
+  } else if (data.notes[id]) {
+    res.status(200).json(data.notes[id]);
+  } else if (!data.notes[id]) {
     res.status(404).json({ error: `cannot find note with id ${id}` });
   }
 });
@@ -44,10 +39,10 @@ app.post('/api/notes', (req, res) => {
     });
   } else if (req.body.content) {
     const newContent = req.body;
-    newContent.id = dataModel.nextId;
-    dataModel.notes[dataModel.nextId] = newContent;
-    dataModel.nextId++;
-    fs.writeFile('data.json', JSON.stringify(dataModel, null, 2), 'utf8', err => {
+    newContent.id = data.nextId;
+    data.notes[data.nextId] = newContent;
+    data.nextId++;
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), 'utf8', err => {
       if (err) {
         res.status(500).json({ error: 'An unexpected error occurred.' });
         console.error(err);
@@ -65,9 +60,9 @@ app.delete('/api/notes/:id', (req, res) => {
     res.status(400).json({
       error: 'id must be a positive integer'
     });
-  } else if (dataModel.notes[id]) {
-    delete dataModel.notes[id];
-    fs.writeFile('data.json', JSON.stringify(dataModel, null, 2), 'utf8', err => {
+  } else if (data.notes[id]) {
+    delete data.notes[id];
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), 'utf8', err => {
       if (err) {
         res.status(500).json({ error: 'An unexpected error occurred.' });
         console.error(err);
@@ -76,7 +71,7 @@ app.delete('/api/notes/:id', (req, res) => {
 
       }
     });
-  } else if (!dataModel.notes[id]) {
+  } else if (!data.notes[id]) {
     res.status(404).json({ error: `cannot find note with id ${id}` });
   }
 
@@ -88,13 +83,13 @@ app.put('/api/notes/:id', (req, res) => {
     res.status(400).json({
       error: 'id must be a positive integer'
     });
-  } else if (!dataModel.notes[id]) {
+  } else if (!data.notes[id]) {
     res.status(404).json({ error: `cannot find note with id ${id}` });
-  } else if (dataModel.notes[id]) {
+  } else if (data.notes[id]) {
     const newContent = req.body;
-    dataModel.notes[id].content = newContent;
+    data.notes[id] = newContent;
 
-    fs.writeFile('data.json', JSON.stringify(dataModel, null, 2), 'utf8', err => {
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), 'utf8', err => {
       if (err) {
 
         res.status(500).json({ error: 'An unexpected error occurred.' });
