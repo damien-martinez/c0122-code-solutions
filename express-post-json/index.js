@@ -2,36 +2,25 @@ const express = require('express');
 
 const app = express();
 
-// const nextId = 1;
+let nextId = 1;
 
 const grades = {};
 
+const jsonMiddleware = express.json();
+app.use(jsonMiddleware);
 app.get('/api/grades', (req, res) => {
-  // console.log('G E T');
-  res.json(grades);
+  const gradesArray = [];
+  for (const id in grades) {
+    gradesArray.push(grades[id]);
+  }
+  res.json(gradesArray);
 });
-
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
-
-app.use(express.json());
-
-// const testGrades = {
-//   name: 'Brendan Eich',
-//   course: 'JavaScript',
-//   score: 100
-// };
-
 app.post('/api/grades', (req, res) => {
-  // console.log('P O S T');
-  app.use(express.json(req.body));
-  res.send(req.body);
-  res.status(201);
-
+  const newGrade = req.body;
+  const id = nextId++;
+  newGrade.id = id;
+  grades[id] = newGrade;
+  res.status(201).json(newGrade);
 });
-
 app.listen(3000, () => {
-  // console.log('listening');
-
 });
