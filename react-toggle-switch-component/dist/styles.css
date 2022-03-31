@@ -1,0 +1,36 @@
+.row {
+  display: flex;
+}
+
+.slider {
+  padding: 0.5rem 3rem;
+  border-radius: 25%;
+}
+
+.button {
+  padding: 1.5rem;
+  border-radius: 50%;
+  position: fixed;
+  background-color: white;
+}
+
+.on {
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+.on-position {
+  left: 8px;
+}
+
+.off-position {
+  left: 55px;
+}
+
+.green {
+  background-color: #6aa74f;
+}
+
+.grey {
+  background-color: #e2e2e2;
+}
