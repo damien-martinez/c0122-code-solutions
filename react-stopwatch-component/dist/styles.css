@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.circle {
+  padding: 2rem 4.5rem;
+  border: solid 0.3rem;
+  border-radius: 100%;
+}
+
+.timer {
+  font-size: 2rem;
+}
+
+.icon-div {
+  margin-top: 1rem;
+}
+
+i {
+  font-size: 2rem;
+}
