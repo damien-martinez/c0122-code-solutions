@@ -1,0 +1,16 @@
+.div-class {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1,
+p {
+  border: solid 0.1rem black;
+  margin: 0;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
