@@ -37,14 +37,14 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       const sql = `
       insert into "users" ("username", "hashedPassword")
       values ($1, $2)
-      returning "UserId", "username", "createdAt"
+      returning "userId", "username", "createdAt"
       `;
 
       db.query(sql, params)
         .then(result => {
           // console.log('test', result.rows);
           // // const [newInfo] = result.row;
-          res.status(201).json(result.row);
+          res.status(201).json(result.rows);
         })
         .catch(err => next(err));
     })
