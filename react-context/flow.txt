@@ -1,0 +1,21 @@
+User can sign up.
+
+Click sign up so that the path changes. IF the path ends in
+signup, react directs user to the sign up page. Within the sign
+up page, user is asked to input username and password
+since path is signup, there will be a message that says
+'create an account to get started'
+when this page load the react element, AuthForm also gets triggered
+As user is tying username and password, those two credentials are being saved
+once submitted, a json is created with a post method, headers, and a json stringify
+object with the username and password
+the client witl call fetch  passing in the location /api/auth/signup and the req data
+as a result , the client sends username and password to the server,
+ the server checks if there is a username and a password
+ if there isnt either of the two, a 400 error code is given.
+
+ If there is a password and username, argon2 hashes the password
+ the username and hashed password are then stored in the DB
+the hash will then change to sign in, which will take user to the sign in page
+
+User can sign in
