@@ -9,7 +9,6 @@ import Navbar from './components/navbar';
 import PageContainer from './components/page-container';
 
 // const AppContext = React.createContext(defaultValue);
-
 export default class App extends React.Component {
   constructor(props) {
     super(props);
