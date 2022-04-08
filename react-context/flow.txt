@@ -19,3 +19,5 @@ as a result , the client sends username and password to the server,
 the hash will then change to sign in, which will take user to the sign in page
 
 User can sign in
+
+assuming user is not currently signed in,
