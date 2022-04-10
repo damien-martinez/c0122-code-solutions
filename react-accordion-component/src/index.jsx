@@ -8,7 +8,6 @@ const languagesArr = [
 ];
 
 function Item(props) {
-
   return (
       <div>
         <h1 onClick={() => { props.handleClick(props.value.id); }} className="language">{props.value.title}</h1>
@@ -26,7 +25,7 @@ class Languages extends React.Component {
     this.state = {
       clickedItem: '0'
     };
-    this.languages = props.languages;
+    // this.languages = props.languages;
 
     this.handleClick = this.handleClick.bind(this);
 
