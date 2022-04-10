@@ -1,11 +1,11 @@
 import React from 'react';
-
+/* <MenuIcon isOpen={isOpen} open={toggleOpen} /> */
 function MenuIcon({ open }) {
   return (
     <i onClick={open} className="menu-icon fa fa-bars"/>
   );
 }
-
+/* <MenuDrawer isOpen={isOpen} items={menuItems} close={toggleOpen} heading={menuHeading} /> */
 function MenuDrawer({ heading, items, isOpen, close }) {
   const className = isOpen
     ? 'menu-drawer is-open'
@@ -27,6 +27,7 @@ function MenuDrawer({ heading, items, isOpen, close }) {
     </div>
   );
 }
+/* <MenuShade isDrawn={isOpen} close={toggleOpen} /> */
 
 function MenuShade({ isDrawn, close }) {
   const className = isDrawn
