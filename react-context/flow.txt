@@ -1,0 +1,89 @@
+User can sign up:
+
+Click sign up so that the path changes. IF the path ends in
+signup, react directs user to the sign up page. Within the sign
+up page, user is asked to input username and password
+since path is signup, there will be a message that says
+'create an account to get started'
+when this page load the react element, AuthForm also gets triggered
+As user is tying username and password, those two credentials are being saved
+once submitted, a json is created with a post method, headers, and a json stringify
+object with the username and password
+the client witl call fetch  passing in the location /api/auth/signup and the req data
+as a result , the client sends username and password to the server,
+ the server checks if there is a username and a password
+ if there isnt either of the two, a 400 error code is given.
+
+ If there is a password and username, argon2 hashes the password
+ the username and hashed password are then stored in the DB
+the hash will then change to sign in, which will take user to the sign in page
+
+
+
+User can sign in:
+
+this.state has an empty user and a route that is #sign-in
+navbar is called from the JSX element. this renders the navbar at the top
+page container is also called. inside page container is the this.render()
+this.render() is also called and because path is 'sign in' the auth element is called
+this will render and show a message that says ' please sign in to continue' and also
+call the AuthForm element
+within the AuthForm module, the rendering of the sign in html elements will occur
+As the user types in their username and password, the info will be saved to this
+Once user clicks log in. handleSubmit gets triggered .
+a req object literal will get created
+and the client will fetch the data from the server with a POST method
+because the action is sign in , the post method that has the string that ends in
+sign in will get called
+if it did, it will user the req.body to grab the username and password
+ if the client did not send overa username and password.  and error will be thrown
+ a sql template literal will be created looking for where the username matches the
+ correct username
+ a db query will be called  , the server will grab the username and id from the db
+if it mataches, the info will be assigned to a payload
+a token will be created using the sign method of jwt and the server will send the
+response json will the token and the payload back to the client
+
+back to the client. the client will take the response and return the json of the response
+since  window.locaiton.hash is sign in. and there is info in result.user and
+result.token this.props.onSignIn gets called and passes in result
+This calls handleSignIn from the app module
+This will then save the token to localStorage and change the state of the user
+property to the variable user
+.
+This will then cause a re rendering of the page
+this.renderPage will get triggered during the re-rendering and since the path is empty
+the home module will get called. The home module will render me rick rolled.
+
+
+
+User can stay signed in:
+
+IF user were to refresh, the app module will render and the componentDidMount will be called
+the getItemMethod from the return of the local storage method from the window object
+will grab the 'react-context-jwt' and assign it to token
+if there us a token, token will be decoded and assigned to user.
+the state will change assigning user to user and false to isAuthorizing
+This will then cause a re rendering of the page
+this.renderPage will get triggered during the re-rendering and since the path is empty
+the home module will get called. The home module will render me rick rolled.
+
+
+User can sign out:
+
+
+As everything is re-rendered, the NavBar will also re-render.
+if user clicks sign out, handleSignOut will trigger
+handleSignOut method will remove 'react-context-jwt' from localStorage
+this.state will be changed to have a null user and isAuthorizing would be false
+Since state is changed, page will re-render
+since isAuthorizing is false nothing will happen within the rendering, but componentDidMount
+will be called.
+a listener will be create to parse the has route
+there will be null token and user variable will also be null.
+the state will change and user property will be the user variable
+and isAuthorizing property will be false
+this will cause a re rendering again
+everything will rerender and auth jsx element will be called
+this will trigger a rendering of the sign in since the path sign-in is assigned
+automatically when a user signs out
