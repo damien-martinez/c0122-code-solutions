@@ -5,22 +5,28 @@ function get2ndFromTop(stack) {
   if (stack.peek() === undefined) {
     return undefined;
   }
+  let count = 0;
+  let top = 0;
+  let secondTop = 0;
+  while (stack.peek() !== undefined) {
+    count++;
+    top = stack.pop();
 
-  const newArray = [];
-  let secondToLast = null;
-
-  for (let i = 0; i < 2; i++) {
-    newArray.push(stack.pop());
-  }
-
-  secondToLast = newArray[1];
-
-  for (let i = newArray.length - 1; i >= 0; i--) {
-    if (newArray[i] !== undefined) {
-      stack.push(newArray[i]);
+    if (stack.peek() === undefined && count === 1) {
+      stack.push(top);
+      return undefined;
     }
-  }
 
-  return secondToLast;
+    stack.push(top);
+
+    if (count === 2) {
+      top = stack.pop();
+      secondTop = stack.pop();
+      stack.push(secondTop);
+      stack.push(top);
+      return secondTop;
+    }
+
+  }
 
 }
